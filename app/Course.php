@@ -13,4 +13,8 @@ class Course extends Model
         'year',
         'cfu',
     ];
+
+    public function exams () {
+        return $this->hasMany('App\Exmas');
+    }
 }
